@@ -28,6 +28,15 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
+article h1, h2{
+  margin-top: 1.2em;
+}
+article h3{
+  margin-top: 1.6em;
+}
+article h4, h5, h6 {
+  margin-top: 2em;
+}
 a {
   color: #0085a1;
 }
@@ -35,13 +44,63 @@ a:hover,
 a:focus {
   color: #0057a2;
 }
-a img:hover,
-a img:focus {
-  cursor: zoom-in;
+a.headerlink{
+  opacity: 0;
+  transition: visibility 0s,opacity .2s ease-in;
+}
+a.headerlink:hover,
+a.headerlink:focus{
+  opacity: 1;
+  text-decoration: none;
 }
 blockquote {
   color: #808080;
   font-style: italic;
+}
+blockquote p{
+  margin-top: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+td,
+th {
+  padding: 0
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  margin: 2em 0;
+  background-color: transparent;
+  border: 1px solid #e5e4e1
+}
+table th,
+table td {
+  position: relative;
+  padding: 0.5em;
+  line-height: 0.95em;
+  text-align: left;
+  border: 1px solid #e5e4e1
+}
+table th {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  line-height: 1.25em;
+  padding: 0.666em;
+  color: #000
+}
+table td:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -1px;
+  top: -1px;
+  padding: 1px;
+  z-index: -1;
+  content: '';
+  background: #faf9f7
 }
 pre {
   background-color: transparent;
@@ -151,7 +210,6 @@ nav .container-fluid{
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
