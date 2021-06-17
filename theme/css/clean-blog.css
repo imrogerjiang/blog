@@ -506,7 +506,14 @@ p.portfolio-blurb{
   margin-top: 3.5em;
   margin-bottom: 3em;
 }
-
+div.project h2.post-title a {
+  color: #555960;
+}
+div.project h2.post-title a:hover,
+div.project h2.post-title a:focus {
+  color: #0085a1;
+  text-decoration: none;
+}
 /* Tags */
 h2.list-of-tags{
   margin-top: 2.5em;
